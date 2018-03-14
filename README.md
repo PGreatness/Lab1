@@ -10,3 +10,11 @@ The best case senario is if the array is made of only one unique integer, causin
 This case depends on the array being shuffled everytime after being sorted. This causes the array to have different values as the pivot, which can be the smallest number, the largest number, or simply an in-between number. This means that the runtime simply goes to being **O(nlogn)**.
 ### Worst Case Senario
 The worst case is if the whole array is already sorted in descending order since the algorithmn would cause the pivot point being the smallest element. This means that the partitioning of the array would make it into an array of *1* and *n - 1*. This inflates the runtime to **O(n^2)**.
+
+Average Case Scenario Graph:
+
+
+
+
+
+Worst Case Scenario Graph:
