@@ -3,11 +3,15 @@ APCS2 pd08
 Lab1: Assessing the Runtime of Quicksort
 2018-03-14
 
-## Quicksort Overview
+## Hypothesis
+We think the runtime of quicksort is O(nlogn) because the algorithm will move the pivot logn times (much like bianary sort). Each time there is a new pivot, partition is executed, which is O(n). Hence the runtime of O(nlogn).
+
+## Background
+Quicksort Overview:
 The quicksort algorithm runs through the array provided by continuously dividing the array in half until it reaches the base of an array with length of 1. While dividing the array, it makes a "wall" that seperates between the sorted and unsorted array at each of the extremes. A pivot point, given as the element at the end of the right "wall", is used as a divider. All that are less than the selected pivot is sent to the left while the ones that are equal to or greater than the pivot are on the left side. This causes a runtime of **O(nlogn)** because the pivot is moved down the entire length of the array and causes the array to be cut in half at each element, thus **n** elements causing a runtime of **logn**.
 
-##Hypothesis
-We think the runtime of quicksort is O(nlogn) because the algorithm will move the pivot logn times (much like bianary sort). Each time there is a new pivot, partition is executed, which is O(n). Hence the runtime of O(nlogn).
+## Methodology
+We begin my initiating a test array of length 100, and populating it with numbers 0-99. The array is shuffled, and the StartTime is recorded. Quicksort is immidiately executed, and after it terminates, the total runtime is calculated by subtracting the StartTime with the current time. This runtime is added to a running sum of runtimes. The array is reshuffled, and the process repeats 1000 times. The average runtime is then calculated, and written into a file. Then the array length is increased by 50, and the entire process starts over again. This continues until the array length exceeds 10000.
 
 ## Quicksort Runtime Cases
 ### Best Case Senario
