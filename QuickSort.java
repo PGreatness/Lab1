@@ -63,7 +63,8 @@ public class QuickSort
   public static int[] buildArray( int s, int maxVal ) {
     int[] retArr = new int[s];
     for( int i = 0; i < retArr.length; i++ )
-	    retArr[i] = (int)( maxVal * Math.random() );
+	    //retArr[i] = (int)( maxVal * Math.random() w);
+        retArr[i] = 17;
     return retArr;
   }
   //--------------^  HELPER METHODS  ^--------------
@@ -107,7 +108,7 @@ public class QuickSort
   //main method for testing
   public static void main( String[] args )
   {
-
+ /*~~~~s~l~i~d~e~~~m~e~~~d~o~w~n~~~~~~~~~~~~~~~~~~~~ (C-k, C-k, C-y) 
     //get-it-up-and-running, static test case:
     int [] arr1 = {7,1,5,12,3};
     System.out.println("\narr1 init'd to: " );
@@ -132,11 +133,11 @@ public class QuickSort
     qsort( arrN );
     System.out.println("arrN after sort: " );
     printArr(arrN);
-    /*~~~~s~l~i~d~e~~~m~e~~~d~o~w~n~~~~~~~~~~~~~~~~~~~~ (C-k, C-k, C-y) 
+   
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
-
+/*~~~~s~l~i~d~e~~~m~e~~~d~o~w~n~~~~~~~~~~~~~~~~~~~~ (C-k, C-k, C-y) 
     //get-it-up-and-running, static test case w/ dupes:
     int [] arr2 = {7,1,5,12,3,7};
     System.out.println("\narr2 init'd to: " );
@@ -162,7 +163,7 @@ public class QuickSort
     qsort( arrMatey );
     System.out.println("arrMatey after sort: " );
     printArr(arrMatey);
-    /*~~~~s~l~i~d~e~~~m~e~~~d~o~w~n~~~~~~~~~~~~~~~~~~~~ (C-k, C-k, C-y) 
+    
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
   }//end main
