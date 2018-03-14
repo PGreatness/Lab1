@@ -1,5 +1,5 @@
 Team EquipoNumeroUno (Roster: Ahnaf Hasan, Colin Hosking, Aidan Griffin)
-APCS2 pd08
+APCS02 pd08
 Lab1: Assessing the Runtime of Quicksort
 2018-03-14
 
