@@ -1,3 +1,18 @@
+//Team EquipoNumeroUno (Roster: Ahnaf Hasan, Colin Hosking, Aidan Griffin)
+//APCS2 pd08
+//Lab 1
+//2018-03-13
+
+/*
+Timing mechanism:
+An array is initiated with length 100, which increases by 50 until 10000 with each trial.
+The array is the populated and shuffled. StartTime is recorded, and Quicksort is immidiately executed.
+After Qucksort terminates, the total runtime is calculated by subtracting the StartTime with the current time. 
+This runtime is added to a running sum of runtimes. The array is reshuffled, and Quicksort is executed in the array of
+length n 1000 times. The average runtime is then calculated, and written into a file. 
+Then the array length is increased by 50, and the next trial for a different n begins.
+*/
+
 import java.io.*;
 
 public class QuickSortTester {
