@@ -28,9 +28,6 @@ This case depends on the array being shuffled everytime after being sorted. This
 The worst case is if the whole array is already sorted in descending order since the algorithmn would cause the pivot point being the smallest element. This means that the partitioning of the array would make it into an array of *1* and *n - 1*. This inflates the runtime to **O(n^2)**.
 
 Average Case Scenario Graph:
-
-
-
-
-
+![](Graphs/AverageCase_Lab1.png)
 Worst Case Scenario Graph:
+![](Graphs/WorstCase_Lab1.png)
