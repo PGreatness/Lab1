@@ -1,7 +1,9 @@
-Team EquipoNumeroUno (Roster: Ahnaf Hasan, Colin Hosking, Aidan Griffin)
-APCS02 pd08
-Lab1: Assessing the Runtime of Quicksort
-2018-03-14
+# Team EquipoNumeroUno (Roster: Ahnaf Hasan, Colin Hosking, Aidan Griffin)
+# APCS02 pd08
+# Lab1
+# 2018-03-14
+
+### Lab1: Assessing the Runtime of Quicksort
 
 ## Hypothesis
 We think the runtime of quicksort is O(nlogn) because the algorithm will move the pivot logn times (much like bianary sort). Each time there is a new pivot, partition is executed, which is O(n). Hence the runtime of O(nlogn).
