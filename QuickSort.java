@@ -64,7 +64,7 @@ public class QuickSort
 	int[] retArr = new int[s];
 	for (int i = 0; i < retArr.length; i++)
 	    //retArr[i] = (int)( maxVal * Math.random() w);
-	    retArr[i] = 17;
+	    retArr[i] = i;
 	return retArr;
     }
     //--------------^  HELPER METHODS  ^--------------

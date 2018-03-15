@@ -55,7 +55,7 @@ public class QuickSortTester {
 	QuickSort sort = new QuickSort();
 
 
-	for (int num = 100; num < 10050; num += 50){
+	for (int num = 100; num < 50050; num += 50){
 	
 	int[] tester1 = sort.buildArray(num, 10000);
 	
@@ -65,16 +65,16 @@ public class QuickSortTester {
 	long sum = 0;
 	
 	while (i<1000){
-	    //sort.shuffle(tester1);
+	    sort.shuffle(tester1);
 	    startTime = System.nanoTime();
 	    sort.qsort(tester1);
 	    totalTime = System.nanoTime() - startTime;
 	    sum += totalTime;
 	    i++;
-	    tester1 = sort.buildArray(num,10000);
+	    //tester1 = sort.buildArray(num,10000);
 	    
 	}
-	String ans = read("BestData") + num + "," + sum/1000 + "\n";
-	write(ans,"BestData");}
+	String ans = read("NewData") + num + "," + sum/1000 + "\n";
+	write(ans,"NewData");}
     }
 }
