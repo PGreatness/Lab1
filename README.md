@@ -31,6 +31,8 @@ Average Case Scenario Graph:
 
 ![](Graphs/AverageCase_Lab1.png)
 
+Spikes in this data can be attributed to external activity on the computer while the trials are running, resulting in decreased processing power.
+
 ##
 Worst Case Scenario Graph:
 
