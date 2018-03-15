@@ -6,7 +6,7 @@
 # Lab1: Assessing the Runtime of Quicksort
 
 ## Hypothesis
-We think the runtime of quicksort is O(nlogn) because the algorithm will move the pivot logn times (much like binary sort). Each time there is a new pivot, partition is executed, which is O(n). Hence the runtime of O(nlogn).
+We think the runtime of quicksort is O(nlogn) because the algorithm will move the pivot log n times(much like binary sort). Each time there is a new pivot, partition is executed, which is O(n). Hence the runtime of O(nlogn).
 
 ## Background
 Quicksort Overview:
@@ -23,9 +23,9 @@ To test an array with all the same number, you populate the array with a predete
 ### Best Case Senario
 The best case senario is if the array is made of only one unique integer, causing the algorigthm to not have to sort it since it is already sorted. This means that runtime is still **O(nlogn)** since there isn't a "exit-early" method as that would cause runtime to increase by a very noticeable amount.
 ### Average Case Senario
-This case depends on the array being shuffled everytime after being sorted. This causes the array to have different values as the pivot, which can be the smallest number, the largest number, or simply an in-between number. This means that the runtime simply goes to being **O(nlogn)**.
+This case depends on the array being shuffled everytime after being sorted. This causes the array to have different values as the pivot, which can be the smallest number, the largest number, or simply an in-between number. As n gets larger, the probability of the in-between number being the pivot point gets higher.This means that the runtime is, like the best case, **O(nlogn)** due to the higher probability previously mentioned.
 ### Worst Case Senario
-The worst case is if the whole array is already sorted in descending order since the algorithmn would cause the pivot point being the smallest element. This means that the partitioning of the array would make it into an array of *1* and *n - 1*. This inflates the runtime to **O(n^2)**.
+The worst case is if the whole array is already sorted in descending order since the algorithmn would cause the pivot point being the smallest element. This means that the partitioning of the array would make it into an array of size *1* and size *n - 1*.(To clarify, we are not making two different arrays. We are making subarrays of the same array.) This inflates the runtime to **O(n^2)**.
 
 Average Case Scenario Graph:
 ![](Graphs/AverageCase_Lab1.png)
